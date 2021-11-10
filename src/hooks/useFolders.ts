@@ -29,10 +29,9 @@ export const isVisited = (
 
 export const searchFolder = (
   id: string | null,
-  folder: Folder | null = null,
-  root: Folder | null = null
+  folder: Folder | null = null
 ): Folder | null => {
-  const source = folder?.folders || (root?.folders as Folder[]);
+  const source = folder?.folders;
   if (id && source?.length) {
     let parent = source.find((f) => f.id === id) || null;
     if (!parent) {
