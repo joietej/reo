@@ -31,7 +31,9 @@ const selectedFiles = ref<Array<File | null>>([]);
 const visitedFolderIds = ref<Array<string>>([]);
 
 watchEffect(() => {
-  selectedFolder.value = data.value;
+  if (data.value) {
+    selectedFolder.value = data.value as Folder;
+  }
 });
 
 const goToFolder = (folder: Folder | null) => {
@@ -46,16 +48,12 @@ const goToFolder = (folder: Folder | null) => {
 };
 
 const goToParentFolder = () => {
-  const folder = searchFolder(
-    parentFolderId.value,
-    null,
-    data?.value as Folder
-  );
+  const folder = searchFolder(parentFolderId.value, data?.value as Folder);
   if (folder) {
     parentFolderId.value = folder.parentFolderId;
     selectedFolder.value = folder;
   } else {
-    selectedFolder.value = data?.value;
+    selectedFolder.value = data?.value as Folder;
     parentFolderId.value = null;
   }
 };
