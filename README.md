@@ -1,6 +1,6 @@
 # reo
 
-# Getting Started with Test solution
+# Getting started
 
 ## Requirements
 - [Design](https://www.figma.com/proto/4v2vqqsnubWyedOb0bZuVU/File-Selector-case?node-id=1%3A1944&viewport=1477%2C398%2C1.2320507764816284&scaling=min-zoom&page-id=0%3A1)
@@ -8,7 +8,7 @@
 
 ## CI / CD
 - [Project Vercel](https://vercel.com/tejassahasrabudhe/reo) 
-- [Portal])(https://reo-olive.vercel.app/)
+- [Portal](https://reo-olive.vercel.app/)
 ## Bootstrap
 This project was bootstrapped with [Vue ClI](https://cli.vuejs.org/).
 
@@ -29,7 +29,7 @@ This project was bootstrapped with [Vue ClI](https://cli.vuejs.org/).
 This project uses libraries which are available for Vue and React for seamless transition.
 - [Headeless UI](https://headlessui.dev)
 - [Tailwind CSS](https://tailwindcss.com)
-- [vue Test Utils](https://vue-test-utils.vuejs.org/)
+- [Vue Test Utils](https://vue-test-utils.vuejs.org/)
 
 
 
