@@ -61,7 +61,11 @@ const isFolderVisited = (id: string) => isVisited(id, props.visitedFolderIds);
         "
         @click="$emit('select', [...selectedFiles])"
       >
-        {{ `Select ${selectedFiles.length || ""} Files` }}
+        <span v-if="selectedFiles.length === 1">Select 1 File</span>
+        <span v-else-if="selectedFiles.length > 1">{{
+          `Select ${selectedFiles.length} Files`
+        }}</span>
+        <span v-else>Select Files</span>
       </button>
     </div>
   </div>
