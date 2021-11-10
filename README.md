@@ -8,7 +8,7 @@
 
 ## CI / CD
 - [Project Vercel](https://vercel.com/tejassahasrabudhe/reo) 
-- [Portal]) (https://reo-olive.vercel.app/)
+- [Portal])(https://reo-olive.vercel.app/)
 ## Bootstrap
 This project was bootstrapped with [Vue ClI](https://cli.vuejs.org/).
 
