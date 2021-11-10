@@ -21,6 +21,9 @@ This project was bootstrapped with [Vue ClI](https://cli.vuejs.org/).
   - Used overlay to create model dialog.
   - By default dialog is centered on screen.
   - Clicking outside the dialog closes the dialog.
+- Testing 
+  - Added one e2e test case - select single file
+  - Added couple of unit tests as example
 ## Libraries
 
 This project uses libraries which are available for Vue and React for seamless transition.
