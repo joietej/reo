@@ -17,12 +17,7 @@ export type Folder = {
   files: File[];
 };
 
-const validMimeTypes = [
-  "image/png",
-  "image/gif",
-  "image/jpeg",
-  "application/pdf",
-];
+const validMimeTypes = ["image/png", "image/jpeg", "application/pdf"];
 
 export const isChecked = (
   id: string,

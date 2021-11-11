@@ -14,7 +14,6 @@ This project was bootstrapped with [Vue ClI](https://cli.vuejs.org/).
 
 ## Assumptions & Comments
 - Sample Data
-  - MimeType and file extension mismatched hence using file extension to determine file type.
   - Image urls are not accusable hence using file icons instated of image.
 - UI / UX
   - Fonts & Colors are not 100% matched with given design.
