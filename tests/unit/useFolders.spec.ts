@@ -25,7 +25,7 @@ const folder: Folder = {
 
 const file = {
   id: "file1",
-  name: "file1.jpg",
+  name: "file1",
   mimeType: "image/jpeg",
 } as File;
 

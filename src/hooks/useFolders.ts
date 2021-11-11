@@ -17,6 +17,13 @@ export type Folder = {
   files: File[];
 };
 
+const validMimeTypes = [
+  "image/png",
+  "image/gif",
+  "image/jpeg",
+  "application/pdf",
+];
+
 export const isChecked = (
   id: string,
   selectedFiles: Array<File | null>
@@ -47,16 +54,8 @@ export const searchFolder = (
   return null;
 };
 
-export const isValidFile = (file: File): boolean => {
-  const parts = file?.name?.split(".");
-  if (parts?.length > 1) {
-    const extn = parts[1].toLowerCase();
-    return (
-      extn === "jpeg" || extn === "jpg" || extn === "png" || extn === "pdf"
-    );
-  }
-  return false;
-};
+export const isValidFile = (file: File): boolean =>
+  validMimeTypes.includes(file?.mimeType);
 
 const useFolders = (): IResponse<unknown, unknown> => {
   const url = "https://api-dev.reo.so/api/folderStructure ";
