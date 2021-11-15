@@ -31,7 +31,7 @@ const selectedFiles = ref<Array<File | null>>([]);
 const visitedFolderIds = ref<Array<string>>([]);
 
 watchEffect(() => {
-  if (data.value) {
+  if (data.value && !selectedFolder.value) {
     selectedFolder.value = data.value as Folder;
   }
 });
